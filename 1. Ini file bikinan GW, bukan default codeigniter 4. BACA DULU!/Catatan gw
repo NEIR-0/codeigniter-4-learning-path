@@ -1,0 +1,52 @@
+so ini catatan gw coy:
+!! make sure taor file ci4app di xampp
+
+pertama: Awalan. bikin pages, routes dan utak-atik env
+!!ubah 'env' ke '.env'
+url:http://localhost:8080/pages
+
+0. .env
+1. Routes.php (config)
+2. BaseController.php (controllers)
+3. Pages.php (controllers)
+4. Coba.php (controllers)
+5. home.php (views, pages)
+6. about.php (views, pages)
+7. contact.php (views, pages)
+8. footer.php (views, layout)
+9. header.php (views, layout)
+10. tamplate.php (views, layout)
+Catatan: ada error 'php.ini' di xampp config apache. Lalu uncoment 'extension=intl'
+
+kedua: Komik. CRUD dan database
+url:http://localhost:8080/komik/index
+
+1. Routes.php (config)
+2. Komik.php (controllers)
+3. BaseController.php (controllers)
+4. KomikModel.php (Models) - databse
+5. create.php (views, komik)
+6. detail.php (views, komik)
+7. edit.php (views, komik)
+8. index.php (views, komik)
+9. foto-foto (public, komik)
+Catatan: errornya ada tapi tidak tampil karena kita pake 'enctype="multipart/form-data"', mungkin next time beda in page dah mungkin bisa
+
+ketiga: Migration, seeder dan faker (SUMPAH INI KEREN!!, APA LAGI PAS FAKER GG)
+
+1. 2023-08-29-131552_Orang.php (Database, Migrations)
+2. KomOrangSeederik.php (Database, Seeder)
+3. faker, reff: https://fakerphp.github.io/
+-faker harusnya udah ada langsung di Vendor, tapi kalo gak ada bisa ke terminal 'composer install'
+4. Orang.php (controllers)
+5. OrangModel.php (Models)
+6. index.php (Views > orang)
+7. navbar.php (Views > layout)
+8. Pager.php (App > Config)
+9. orang_pagination.php (Views > Pagers)
+
+database:
+ci4app
+|komik (id, judul, slug, penulis, penerbit, sampul, created_at, updated_at)
+|migrations (default dari codeignator 4 migrate)
+|orang (id, nama, alamat, created_at, updated_at)

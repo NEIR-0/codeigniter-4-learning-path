@@ -1,0 +1,10 @@
+.sampul {
+  width: 70px;
+}
+
+/* gak usah di jhelasin lu dah tau :v */
+/* bisa pakek all/bintang, osalnya tbody > tr > ada th ama td, jadi pake bintang */
+.table > tbody > tr > * {
+  /* biar ada ditengah secara vertical */
+  vertical-align: middle;
+}
