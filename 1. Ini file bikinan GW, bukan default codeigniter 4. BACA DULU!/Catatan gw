@@ -1,5 +1,6 @@
 so ini catatan gw coy:
 !! make sure taor file ci4app di xampp
+!! cara jalanin servernya: php spark serve
 
 pertama: Awalan. bikin pages, routes dan utak-atik env
 !!ubah 'env' ke '.env'
